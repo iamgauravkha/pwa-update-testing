@@ -12,14 +12,14 @@ function App() {
   }, []);
 
   const sayHello = () => {
-    alert("Hello from PWA V1");
+    alert("Hello from PWA V2");
   };
 
   return (
     <>
       <h1>Hello this is pwa version 1</h1>
       <button onClick={() => sayHello()}>Click me for gretting</button>
-      {true && (
+      {showUpdate && (
         <div className="fixed w-[300px] h-[100px] flex items-start flex-col justify-between bottom-4 right-4 bg-black text-white p-4 rounded">
           <p>New version available</p>
           <button
